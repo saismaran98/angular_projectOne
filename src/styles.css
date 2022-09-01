@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+div{
+    margin: 2px;
+}
+#recipe_edit{
+    position: fixed;
+    left: 50%;
+    bottom: 74%;
+}
+#recipe_list_items{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+}
+  input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
