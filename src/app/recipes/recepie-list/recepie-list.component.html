@@ -6,19 +6,9 @@
 <hr>
 <div class="row" >
     <div class="col-xs-6 form-group row">
-        <a href="" class="list-group-item clearfix"
-        *ngFor="let recipe of recipies"
-        id="recipe_list_items">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">{{recipe.name}}</h4>
-                <p class="list-group-itme-text">{{recipe.description}}</p>
-            </div>
-            <span class="pull-right">
-                <img src="../../../assets/ibm-think-03.jpg"
-                style="max-height: 50px;"
-                alt="" class="img-responsive">
-            </span>
-        </a>
-        <app-recipe-item></app-recipe-item>
+       
+        <app-recipe-item *ngFor="let recipeEl of recipies"
+        [recipe]="recipeEl"
+        (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>
     </div>
 </div>

@@ -7,7 +7,7 @@ div{
 #recipe_edit{
     position: fixed;
     left: 50%;
-    bottom: 74%;
+    bottom: 30%;
 }
 #recipe_list_items{
     display: flex;

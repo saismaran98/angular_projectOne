@@ -1,12 +1,15 @@
 <div id="recipe_edit">
 <div class="row"  id="recipe">
     <div class="col-xs-12">
-        <img src="" alt="" class="img-responsive">
+        <img [src]="recipe.imagePath" 
+        alt="{{recipe.name}}"
+        style="max-height: 200px"
+        class="img-responsive">
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <h1> Recipe Name</h1>
+        <h1> {{recipe.name}}</h1>
     </div>
 </div>
 <div class="row">
@@ -24,7 +27,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col xs-12">Description</div>
+    <div class="col xs-12">{{recipe.description}}</div>
 </div>
 <div class="row">
         <div class="col-xs-12">
