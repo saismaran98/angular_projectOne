@@ -7,13 +7,13 @@ import { Ingredient } from '../shared/ingredient.model';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
-  ingredients: Ingredient[]=[
-    new Ingredient('Apple',6),
-    new Ingredient('Tomatoes',10)
-  ];
+  ingredients: Ingredient[]=[];
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onIngredientAdded(ingredient:Ingredient){
+    console.log(ingredient);
+    this.ingredients.push(ingredient);
+  }
 }
